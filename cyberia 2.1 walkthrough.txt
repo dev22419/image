@@ -1,0 +1,23 @@
+cyberia 2.1 walkthrough 
+
+
+- take the ip and scan it with nmap 
+	you will get that the machine is running and http server on port 80 and an ssh service on port 22 
+
+- visit the website , by entering the ip in the browser. find something help full .
+
+- in the code you found that there is a user named cyberia24 . 
+
+- and also found that there is something with password.txt
+
+- you used dirb to find something more and you found the robots.txt
+
+- you entered /password.txt with the given ip . and downloaded the password.txt file 
+
+- there are many password in the password.txt , try bruteforcing on ssh with username cyberia24
+
+- yes , you got the access of the user cyberia24 and submitted the user flag . 
+
+- now , you typed sudo -l and show , to which commands you have access to without password . and show that you have access to crontab with no password
+
+- then , use the crontab to get access to the superuse , visit gtfobins.github.io
